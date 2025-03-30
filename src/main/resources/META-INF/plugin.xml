@@ -1,18 +1,17 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.andrerab.ollamacompletionplugin</id>
-    <name>OllamaCompletionPlugin-</name>
+    <name>OllamaCompletionPlugin</name>
+    <version>0.0.1</version>
     <vendor>andrerab</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <description>
+        AI-powered inline completion using a local Ollama LLM.
+    </description>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.andrerab.ollamacompletionplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <inline.completion.provider implementation="com.github.andrerab.ollamacompletionplugin.OllamaCompletionProvider"></inline.completion.provider>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.andrerab.ollamacompletionplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
