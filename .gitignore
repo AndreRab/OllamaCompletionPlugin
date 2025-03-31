@@ -3,3 +3,4 @@
 .intellijPlatform
 .qodana
 build
+!build/distributions/OllamaCompletionPlugin-0.0.1.zip
