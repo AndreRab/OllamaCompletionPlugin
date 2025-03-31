@@ -53,3 +53,4 @@ This launches a sandbox instance of IntelliJ with the plugin enabled.
 
 ---
 ## 😎 Usage example
+![ezgif-4db3b0760e003d](https://github.com/user-attachments/assets/083222a3-4d9a-4e28-9a07-570a02a4090c)
