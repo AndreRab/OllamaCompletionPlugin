@@ -1,5 +1,6 @@
 package com.github.andrerab.ollamacompletionplugin.cache;
 
+import com.github.andrerab.ollamacompletionplugin.AutoCompleteCache;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

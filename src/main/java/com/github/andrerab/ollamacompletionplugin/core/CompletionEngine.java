@@ -1,6 +1,6 @@
 package com.github.andrerab.ollamacompletionplugin.core;
 
-import com.github.andrerab.ollamacompletionplugin.cache.AutoCompleteCache;
+import com.github.andrerab.ollamacompletionplugin.AutoCompleteCache;
 import com.github.andrerab.ollamacompletionplugin.config.ErrorMessage;
 import com.intellij.codeInsight.inline.completion.InlineCompletionRequest;
 import com.intellij.codeInsight.inline.completion.elements.InlineCompletionElement;

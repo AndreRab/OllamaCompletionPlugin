@@ -1,4 +1,4 @@
-package com.github.andrerab.ollamacompletionplugin.cache;
+package com.github.andrerab.ollamacompletionplugin;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
