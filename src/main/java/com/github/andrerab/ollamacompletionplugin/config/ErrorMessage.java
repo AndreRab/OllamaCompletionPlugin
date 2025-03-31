@@ -1,4 +1,4 @@
-package com.github.andrerab.ollamacompletionplugin;
+package com.github.andrerab.ollamacompletionplugin.config;
 
 public class ErrorMessage {
     public final static String ERROR_RESPONSE_FORMAT_MESSAGE = "Can't find response";

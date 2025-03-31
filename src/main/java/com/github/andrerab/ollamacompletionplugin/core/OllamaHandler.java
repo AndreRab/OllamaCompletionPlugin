@@ -1,5 +1,7 @@
-package com.github.andrerab.ollamacompletionplugin;
+package com.github.andrerab.ollamacompletionplugin.core;
 
+import com.github.andrerab.ollamacompletionplugin.config.ErrorMessage;
+import com.github.andrerab.ollamacompletionplugin.config.ModelConstants;
 import org.jetbrains.annotations.NotNull;
 
 import java.net.URI;

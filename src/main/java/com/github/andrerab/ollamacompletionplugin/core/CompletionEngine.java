@@ -1,5 +1,7 @@
-package com.github.andrerab.ollamacompletionplugin;
+package com.github.andrerab.ollamacompletionplugin.core;
 
+import com.github.andrerab.ollamacompletionplugin.cache.AutoCompleteCache;
+import com.github.andrerab.ollamacompletionplugin.config.ErrorMessage;
 import com.intellij.codeInsight.inline.completion.InlineCompletionRequest;
 import com.intellij.codeInsight.inline.completion.elements.InlineCompletionElement;
 import com.intellij.codeInsight.inline.completion.elements.InlineCompletionGrayTextElement;
@@ -11,9 +13,10 @@ import java.util.List;
 
 
 public class CompletionEngine {
-    private static final int cacheSize = 100_000;
-    private static final AutoCompleteCache cache = new AutoCompleteCache(cacheSize);
-    private static final OllamaHandler ollamaHandler = new OllamaHandler();
+    public static final int CACHE_WINDOW_SIZE = 20;
+    public static final int CACHE_CAPACITY = 100;
+    private static final AutoCompleteCache cache = new AutoCompleteCache(CACHE_CAPACITY, CACHE_WINDOW_SIZE);
+    private static OllamaHandler ollamaHandler = new OllamaHandler();
 
     public static List<InlineCompletionElement> getCompletion(@NotNull InlineCompletionRequest request) {
         String prefix = ApplicationManager.getApplication().runReadAction((Computable<String>) () -> {
@@ -30,7 +33,7 @@ public class CompletionEngine {
         String storedPostfix = cache.get(prefix);
         if(storedPostfix == null){
             String llamaCompletion = ollamaHandler.requestLlama(prefix).join();
-            if(llamaCompletion != ErrorMessage.ERROR_RESPONSE_FORMAT_MESSAGE && llamaCompletion != ErrorMessage.ERROR_AI_MESSAGE) {
+            if(!llamaCompletion.equals(ErrorMessage.ERROR_RESPONSE_FORMAT_MESSAGE) && !llamaCompletion.equals(ErrorMessage.ERROR_AI_MESSAGE)) {
                 cache.put(prefix, llamaCompletion);
             }
             return llamaCompletion;

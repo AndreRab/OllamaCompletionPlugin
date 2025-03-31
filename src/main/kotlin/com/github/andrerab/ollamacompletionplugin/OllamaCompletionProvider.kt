@@ -1,5 +1,6 @@
 package com.github.andrerab.ollamacompletionplugin
 
+import com.github.andrerab.ollamacompletionplugin.core.CompletionEngine
 import com.intellij.codeInsight.inline.completion.*
 import com.intellij.codeInsight.inline.completion.suggestion.InlineCompletionSingleSuggestion
 import com.intellij.codeInsight.inline.completion.suggestion.InlineCompletionSuggestion

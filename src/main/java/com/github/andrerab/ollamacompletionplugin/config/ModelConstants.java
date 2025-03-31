@@ -1,4 +1,4 @@
-package com.github.andrerab.ollamacompletionplugin;
+package com.github.andrerab.ollamacompletionplugin.config;
 
 public class ModelConstants {
     public static final String RESPONSE_PATTERN_STRING  = "\"response\"\\s*:\\s*\"(.*?)\",\\s*\"done";
