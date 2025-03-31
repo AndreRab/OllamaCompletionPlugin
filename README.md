@@ -32,7 +32,7 @@ To improve performance and reduce redundant model queries, a windowed cache is u
   git clone https://github.com/your-name/OllamaCompletionPlugin.git
 ~~~ 
 - In your IDE, go to Settings → Plugins → ⚙️ → Install Plugin from Disk…, and select the file:
-  [plugin/OllamaCompletionPlugin--0.0.1.zip]() 
+  [plugin/OllamaCompletionPlugin--0.0.1.zip](https://github.com/AndreRab/OllamaCompletionPlugin/blob/main/plugin/OllamaCompletionPlugin--0.0.1.zip) 
 - ⭕️ Make sure Ollama is running in the background, open your Java project, and enjoy coding with your new AI assistant!
 
 
