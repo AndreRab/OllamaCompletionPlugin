@@ -30,7 +30,6 @@ To improve performance and reduce redundant model queries, a windowed cache is u
 - Download and run the model in your terminal:
 ~~~ bash
   ollama pull deepseek-coder:6.7b
-  ollama run deepseek-coder:6.7b
 ~~~
 
 - Download this [file](https://github.com/AndreRab/OllamaCompletionPlugin/blob/main/plugin/OllamaCompletionPlugin--0.0.1.zip)
@@ -47,7 +46,6 @@ To improve performance and reduce redundant model queries, a windowed cache is u
 - Download and run the model in your terminal:
 ~~~ bash
   ollama pull deepseek-coder:6.7b
-  ollama run deepseek-coder:6.7b
 ~~~
 - Clone and run the plugin:
 ~~~ bash
