@@ -16,7 +16,7 @@ public class CompletionEngine {
     public static final int CACHE_WINDOW_SIZE = 20;
     public static final int CACHE_CAPACITY = 100;
     private static final AutoCompleteCache cache = new AutoCompleteCache(CACHE_CAPACITY, CACHE_WINDOW_SIZE);
-    private static final OllamaHandler ollamaHandler = new OllamaHandler();
+    private static OllamaHandler ollamaHandler = new OllamaHandler();
 
     public static List<InlineCompletionElement> getCompletion(@NotNull InlineCompletionRequest request) {
         String prefix = ApplicationManager.getApplication().runReadAction((Computable<String>) () -> {
