@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.github.andrerab.ollamacompletionplugin</id>
-    <name>OllamaCompletionPlugin</name>
+    <name>Ollama completion</name>
     <version>0.0.1</version>
     <vendor>andrerab</vendor>
 
