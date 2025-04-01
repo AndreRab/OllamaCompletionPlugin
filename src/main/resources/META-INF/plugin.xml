@@ -4,6 +4,7 @@
     <version>0.0.1</version>
     <vendor>andrerab</vendor>
 
+    <idea-version since-build="241" until-build="243.*" />
     <depends>com.intellij.modules.platform</depends>
 
     <description>

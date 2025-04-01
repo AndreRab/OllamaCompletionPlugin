@@ -12,8 +12,6 @@ import java.util.concurrent.CompletableFuture;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.intellij.codeInspection.InspectionApplicationBase.LOG;
-
 public class OllamaHandler {
     private static final HttpClient CLIENT = HttpClient.newHttpClient();
     private static final Pattern RESPONSE_PATTERN = Pattern.compile(ModelConstants.RESPONSE_PATTERN_STRING);
@@ -57,7 +55,6 @@ public class OllamaHandler {
     }
 
     private static String extractAnswer(String responseJson) {
-        LOG.info("response: " + responseJson);
         Matcher matcher = RESPONSE_PATTERN.matcher(responseJson);
         if (!matcher.find()) {
             return ErrorMessage.ERROR_RESPONSE_FORMAT_MESSAGE;
@@ -83,7 +80,6 @@ public class OllamaHandler {
                 .replace("\n", "\\n")
                 .replace("\r", "\\r")
                 .replace("\t", "\\t");
-        LOG.info("Prompt: " + escaped);
         return """
             {
                 "model": "deepseek-coder:6.7b",
