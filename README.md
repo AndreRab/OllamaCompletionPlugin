@@ -44,6 +44,11 @@ To improve performance and reduce redundant model queries, a windowed cache is u
 ## 🔧 How to run plugin in a sandbox
 
 - Install [Ollama](https://ollama.com) and run the application:
+- Download and run the model in your terminal:
+~~~ bash
+  ollama pull deepseek-coder:6.7b
+  ollama run deepseek-coder:6.7b
+~~~
 - Clone and run the plugin:
 ~~~ bash
   git clone https://github.com/your-name/OllamaCompletionPlugin.git
