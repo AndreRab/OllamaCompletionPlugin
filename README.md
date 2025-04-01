@@ -27,17 +27,12 @@ To improve performance and reduce redundant model queries, a windowed cache is u
 ## 🔧 How to run plugin in your real IDE
 
 - Install [Ollama](https://ollama.com) and make sure the application is running:
-- Clone the plugin:
-~~~ bash
-  git clone https://github.com/your-name/OllamaCompletionPlugin.git
-~~~ 
-- In your IDE, go to Settings → Plugins → ⚙️ → Install Plugin from Disk…, and select the file:
-  [plugin/OllamaCompletionPlugin--0.0.1.zip]() 
+- Download this [file](https://github.com/AndreRab/OllamaCompletionPlugin/blob/main/plugin/OllamaCompletionPlugin--0.0.1.zip)
+- In your IDE, go to Settings → Plugins → ⚙️ → Install Plugin from Disk…, and select downloaded file:
+  [OllamaCompletionPlugin--0.0.1.zip](https://github.com/AndreRab/OllamaCompletionPlugin/blob/main/plugin/OllamaCompletionPlugin--0.0.1.zip) 
 - ⭕️ Make sure Ollama is running in the background, open your Java project, and enjoy coding with your new AI assistant!
 
-
 <!-- Plugin description end -->
-
 ---
 
 ## 🔧 How to run plugin in a sandbox
@@ -53,4 +48,5 @@ This launches a sandbox instance of IntelliJ with the plugin enabled.
 
 ---
 ## 😎 Usage example
-![ezgif-4db3b0760e003d](https://github.com/user-attachments/assets/083222a3-4d9a-4e28-9a07-570a02a4090c)
+![Projekt bez nazwy](https://github.com/user-attachments/assets/76d21ba3-9cb8-431a-a3c6-a2a604de1096)
+
