@@ -27,6 +27,12 @@ To improve performance and reduce redundant model queries, a windowed cache is u
 ## 🔧 How to run plugin in your real IDE
 
 - Install [Ollama](https://ollama.com) and make sure the application is running:
+- Download and run the model in your terminal:
+~~~ bash
+  ollama pull deepseek-coder:6.7b
+  ollama run deepseek-coder:6.7b
+~~~
+
 - Download this [file](https://github.com/AndreRab/OllamaCompletionPlugin/blob/main/plugin/OllamaCompletionPlugin--0.0.1.zip)
 - In your IDE, go to Settings → Plugins → ⚙️ → Install Plugin from Disk…, and select downloaded file:
   [OllamaCompletionPlugin--0.0.1.zip](https://github.com/AndreRab/OllamaCompletionPlugin/blob/main/plugin/OllamaCompletionPlugin--0.0.1.zip) 
